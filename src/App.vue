@@ -10,8 +10,11 @@
       <v-btn icon to="/">
         <v-icon>mdi-home</v-icon>
       </v-btn>
-      <v-btn icon to="/blank">
-        <v-icon>mdi-file-outline</v-icon>
+      <v-btn icon to="/transactions">
+        <v-icon>mdi-swap-horizontal</v-icon>
+      </v-btn>
+      <v-btn icon to="/reports">
+        <v-icon>mdi-chart-bar</v-icon>
       </v-btn>
     </v-app-bar>
 

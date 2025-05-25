@@ -13,11 +13,13 @@ import '@mdi/font/css/materialdesignicons.css'
 
 // Routes
 import Home from './views/Home.vue'
-import BlankPage from './views/BlankPage.vue'
+import Transactions from './views/Transactions.vue'
+import Reports from './views/Reports.vue'
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/blank', component: BlankPage }
+  { path: '/transactions', component: Transactions },
+  { path: '/reports', component: Reports }
 ]
 
 const router = createRouter({
@@ -49,19 +51,6 @@ const vuetify = createVuetify({
           success: '#4CAF50',
           warning: '#FFC107',
           background: '#F5F5F5'
-        }
-      },
-      dark: {
-        dark: true,
-        colors: {
-          primary: '#2196F3',
-          secondary: '#616161',
-          accent: '#82B1FF',
-          error: '#FF5252',
-          info: '#2196F3',
-          success: '#4CAF50',
-          warning: '#FFC107',
-          background: '#121212'
         }
       }
     }
