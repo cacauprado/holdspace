@@ -1,0 +1,54 @@
+// Animation utilities
+
+// Fade transitions
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity $transition-base;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// Slide transitions
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: transform $transition-base, opacity $transition-base;
+}
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+// Scale transitions
+.scale-enter-active,
+.scale-leave-active {
+  transition: transform $transition-base, opacity $transition-base;
+}
+
+.scale-enter-from,
+.scale-leave-to {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+// Hover effects
+.hover-elevate {
+  transition: transform $transition-base, box-shadow $transition-base;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-md;
+  }
+}
+
+.hover-highlight {
+  transition: background-color $transition-fast;
+  
+  &:hover {
+    background-color: rgba($primary, 0.05);
+  }
+}
