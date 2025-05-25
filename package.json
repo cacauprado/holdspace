@@ -10,10 +10,11 @@
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
     "now-start": "vue-cli-service serve",
     "test:e2e": "vue-cli-service test:e2e",
-      "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.16",
     "chart.js": "^2.9.4",
     "core-js": "^3.6.2",
     "vue": "^2.6.11",
